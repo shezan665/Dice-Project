@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    gap: 55px;
+}
+
+/* Dice Box */
+.dice {
+    width: 220px;
+    height: 220px;
+
+    background-color: #fff;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+}
+
+/* Black dots */
+.dice span {
+    width: 45px;
+    height: 45px;
+
+    background-color: black;
+
+    border-radius: 50%;
+
+    position: absolute;
+}
+
+
+/* =========================
+   DICE 1
+   ========================= */
+
+.dice-1 span {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* =========================
+   DICE 2
+   ========================= */
+
+.dice-2 span:nth-child(1) {
+    top: 25px;
+    left: 25px;
+}
+
+.dice-2 span:nth-child(2) {
+    bottom: 25px;
+    right: 25px;
+}
+
+
+/* =========================
+   DICE 3
+   ========================= */
+
+.dice-3 span:nth-child(1) {
+    top: 25px;
+    left: 25px;
+}
+
+.dice-3 span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.dice-3 span:nth-child(3) {
+    bottom: 25px;
+    right: 25px;
+}
+
+
+/* =========================
+   DICE 4
+   ========================= */
+
+.dice-4 span:nth-child(1) {
+    top: 25px;
+    left: 25px;
+}
+
+.dice-4 span:nth-child(2) {
+    top: 25px;
+    right: 25px;
+}
+
+.dice-4 span:nth-child(3) {
+    bottom: 25px;
+    left: 25px;
+}
+
+.dice-4 span:nth-child(4) {
+    bottom: 25px;
+    right: 25px;
+}
+
+
+/* =========================
+   DICE 5
+   ========================= */
+
+.dice-5 span:nth-child(1) {
+    top: 25px;
+    left: 25px;
+}
+
+.dice-5 span:nth-child(2) {
+    top: 25px;
+    right: 25px;
+}
+
+.dice-5 span:nth-child(3) {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.dice-5 span:nth-child(4) {
+    bottom: 25px;
+    left: 25px;
+}
+
+.dice-5 span:nth-child(5) {
+    bottom: 25px;
+    right: 25px;
+}
+
+
+/* =========================
+   DICE 6
+   ========================= */
+
+.dice-6 span:nth-child(1) {
+    top: 25px;
+    left: 25px;
+}
+
+.dice-6 span:nth-child(2) {
+    top: 25px;
+    right: 25px;
+}
+
+.dice-6 span:nth-child(3) {
+    top: 50%;
+    left: 25px;
+
+    transform: translateY(-50%);
+}
+
+.dice-6 span:nth-child(4) {
+    top: 50%;
+    right: 25px;
+
+    transform: translateY(-50%);
+}
+
+.dice-6 span:nth-child(5) {
+    bottom: 25px;
+    left: 25px;
+}
+
+.dice-6 span:nth-child(6) {
+    bottom: 25px;
+    right: 25px;
+}
